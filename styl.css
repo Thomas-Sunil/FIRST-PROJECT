@@ -27,3 +27,70 @@ nav{
     width: 150px ;
     cursor: pointer;
 }
+nav button{
+    border: 0;
+    outline: 0;
+    background: #db0001;
+    color: black;
+    padding: 7px 20px;
+    font-size: 12px;
+    border-radius: 4px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.lanbtn{
+    color: #fff;
+    display: inline-flex;
+    align-items: center;
+    background: transparent;
+    border: 1px solid white;
+    padding: 7px 10px;
+
+}
+.lanbtn img{
+    width:10px;
+    margin-left:10px;
+}
+.header-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    margin-top: 100px;
+}
+.header-content h1{
+    font-size: 60px;
+    line-height: 70px;
+    font-weight: 600px;
+    max-width: 600px;
+}
+.header-content h3{
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.emails{
+    background: #fff;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    overflow: hidden;
+
+}
+.emails input
+{
+  flex: 1;
+  border: 0;
+  outline: 0;
+  margin-left: 20px;
+}
+.emails button{
+    background: red;
+    border: 0;
+    outline: 0;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 15px 30px;
+}
