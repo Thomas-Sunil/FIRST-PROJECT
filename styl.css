@@ -125,3 +125,93 @@ margin-bottom: 20px;
     font-weight: 600;
     margin-bottom: 20px;
 }
+.faq{
+    padding: 10px 12%;
+    text-align: center;
+    font-size: 18px;
+
+}
+.faq h2{
+    font-weight: 500;
+    font-size: 40px;
+}
+.accordion{
+    margin: 60px auto;
+    width: 100%;
+    max-width: width 750px;;
+}
+.accordion li{
+    list-style: none;
+    padding: 5px;
+    width: 100%;
+}
+.accordion li label{
+    display: flex;
+    align-content:"center";
+    align-items: center;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    background: #303030; ;
+    margin-bottom:2px ;
+    cursor: pointer;
+    position: relative;
+}
+label::after{
+ content: '+';
+ font-size: 34px;
+ right: 20px;
+ position: absolute;
+ transition: transform 0.5s;
+}
+input[type="radio"]{
+    display: none;
+}
+.accordion .content{
+    background: #303030;
+    text-align: left;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s, padding 0.5s;
+}
+.accordion input[type="radio"]:checked + label + .content{
+    max-height: 600px;
+    padding: 30px 20px;
+}
+.accordion input[type="radio"]:checked + label::after{
+    transform: rotate(135deg);
+}
+.faq p{
+    text-align: left;
+    margin-left: 5px;
+}
+.emails2{
+    background: #fff;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    overflow: hidden;
+    margin-left: 12%;
+    margin-right: 50%;
+    
+
+}
+.emails2 input
+{
+  flex: 1;
+  border: 0;
+  outline: 0;
+  
+}
+.emails2 button{
+    border-radius:4px;
+    background: red;
+    border: 0;
+    outline: 0;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 15px 30px;
+}
